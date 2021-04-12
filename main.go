@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"golang/todo_app/models"
+	"log"
 )
 
 func main() {
@@ -65,4 +66,10 @@ func main() {
 
 	user, _ := models.GetUserByEmail("test@example.com")
 	fmt.Println(user)
+
+	session, err := user.CreateSession()
+	if err != nil {
+		log.Println(err)
+	}
+	fmt.Println(session)
 }

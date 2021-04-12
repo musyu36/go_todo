@@ -98,3 +98,32 @@ func GetUserByEmail(email string) (user User, err error) {
 	)
 	return user, err
 }
+
+func (u *User) CreateSession() (session Session, err error) {
+	session = Session{}
+
+	// セッションの作成
+	cmd1 := `insert into sessions(
+		uuid,
+		email,
+		user_id,
+		created_at
+	) values (?, ?, ?, ?)`
+
+	_, err = Db.Exec(cmd1, createUUID(), u.Email, u.ID, time.Now())
+	if err != nil {
+		log.Println(err)
+	}
+
+	// 上記で作成したセッションを即取得するコマンド
+	// sessions テーブルから user_id, email が一致するものを取得
+	cmd2 := `select id, uuid, email, user_id, created_at from sessions where user_id = ? and email = ?`
+
+	err = Db.QueryRow(cmd2, u.ID, u.Email).Scan(
+		&session.ID,
+		&session.UUID,
+		&session.Email,
+		&session.UserID,
+		&session.CreatedAt)
+	return session, err
+}
