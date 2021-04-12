@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"golang/todo_app/app/controllers"
 	"golang/todo_app/models"
 )
 
@@ -62,6 +61,8 @@ func main() {
 	// t.DeleteTodo()
 
 	// サーバの起動
-	controllers.StartMainServer()
+	// controllers.StartMainServer()
 
+	user, _ := models.GetUserByEmail("test@example.com")
+	fmt.Println(user)
 }
