@@ -390,3 +390,2049 @@ net/http.(*conn).serve(0xc00020c1e0, 0x45a2d40, 0xc000218380)
 	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
 created by net/http.(*Server).Serve
 	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:10:27 server.go:3095: http: panic serving [::1]:59864: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b4f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44e4200, 0xc00009b8c0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001b61c0, 0x44bd940, 0x459f990, 0xc0000f5b28, 0x3, 0x3)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0001b61c0, 0xc0001a8a00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4551008, 0x45ae9c0, 0xc0001b61c0, 0xc0001a8a00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001b61c0, 0xc0001a8a00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001b61c0, 0xc0001a8a00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b4f00, 0x45af3c0, 0xc000190000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:10:27 server.go:3095: http: panic serving [::1]:60427: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc0001d2000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44e4200, 0xc00006a660)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00007a0e0, 0x44bd940, 0x459f990, 0xc00018ab28, 0x3, 0x3)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc00007a0e0, 0xc0001a8b00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4551008, 0x45ae9c0, 0xc00007a0e0, 0xc0001a8b00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00007a0e0, 0xc0001a8b00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00007a0e0, 0xc0001a8b00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001d2000, 0x45af3c0, 0xc000190500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:10:27 server.go:3095: http: panic serving [::1]:60428: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc0000b5040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44e4200, 0xc00009ba40)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001b62a0, 0x44bd940, 0x459f990, 0xc000044b28, 0x3, 0x3)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0001b62a0, 0xc0000fc800)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4551008, 0x45ae9c0, 0xc0001b62a0, 0xc0000fc800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001b62a0, 0xc0000fc800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001b62a0, 0xc0000fc800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5040, 0x45af3c0, 0xc0000ca900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:10:28 server.go:3095: http: panic serving [::1]:60433: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 47 [running]:
+net/http.(*conn).serve.func1(0xc0001d20a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44e4200, 0xc00006a9f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00007a1c0, 0x44bd940, 0x459f990, 0xc00018ab28, 0x3, 0x3)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc00007a1c0, 0xc00006c900)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4551008, 0x45ae9c0, 0xc00007a1c0, 0xc00006c900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00007a1c0, 0xc00006c900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00007a1c0, 0xc00006c900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001d20a0, 0x45af3c0, 0xc00005c480)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:10:28 server.go:3095: http: panic serving [::1]:60434: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 48 [running]:
+net/http.(*conn).serve.func1(0xc0001d2140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44e4200, 0xc00018f0b0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001b6380, 0x44bd940, 0x459f990, 0xc000044b28, 0x3, 0x3)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0001b6380, 0xc0001a8f00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4551008, 0x45ae9c0, 0xc0001b6380, 0xc0001a8f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001b6380, 0xc0001a8f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001b6380, 0xc0001a8f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001d2140, 0x45af3c0, 0xc0001907c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:10:28 server.go:3095: http: panic serving [::1]:60435: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1(0xc000238000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44e4200, 0xc00018f350)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001b6460, 0x44bd940, 0x459f990, 0xc00018ab28, 0x3, 0x3)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0001b6460, 0xc00006cc00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4551008, 0x45ae9c0, 0xc0001b6460, 0xc00006cc00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001b6460, 0xc00006cc00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001b6460, 0xc00006cc00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000238000, 0x45af3c0, 0xc00005c700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:16:53 server.go:3095: http: panic serving [::1]:62038: template: signup.html:17: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc00012ef00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0001130e0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001800e0, 0x44bd960, 0x459f990, 0xc000049b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001800e0, 0xc000174200)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001800e0, 0xc000174200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001800e0, 0xc000174200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000180000, 0x45ae9c0, 0xc0001800e0, 0xc000174200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00012ef00, 0x45af3c0, 0xc00005c040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:16:53 server.go:3095: http: panic serving [::1]:62039: template: signup.html:17: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc00012efa0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00021a0f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00021e000, 0x44bd960, 0x459f990, 0xc000173b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00021e000, 0xc000174100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00021e000, 0xc000174100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00021e000, 0xc000174100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000180000, 0x45ae9c0, 0xc00021e000, 0xc000174100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00012efa0, 0x45af3c0, 0xc000142540)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:16:53 server.go:3095: http: panic serving [::1]:62040: template: signup.html:17: unexpected EOF
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc00009a000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000a8100)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000c0000, 0x44bd960, 0x459f990, 0xc0000a0b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000c0000, 0xc0000aa000)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0000c0000, 0xc0000aa000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000c0000, 0xc0000aa000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000180000, 0x45ae9c0, 0xc0000c0000, 0xc0000aa000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00009a000, 0x45af3c0, 0xc0000a6000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:16:55 server.go:3095: http: panic serving [::1]:62046: template: signup.html:17: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc00012f040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000a8210)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000c00e0, 0x44bd960, 0x459f990, 0xc000049b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000c00e0, 0xc000174700)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0000c00e0, 0xc000174700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000c00e0, 0xc000174700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000180000, 0x45ae9c0, 0xc0000c00e0, 0xc000174700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00012f040, 0x45af3c0, 0xc000142880)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:16:55 server.go:3095: http: panic serving [::1]:62047: template: signup.html:17: unexpected EOF
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc00012f0e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000113210)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001801c0, 0x44bd960, 0x459f990, 0xc000044b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001801c0, 0xc000174800)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001801c0, 0xc000174800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001801c0, 0xc000174800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000180000, 0x45ae9c0, 0xc0001801c0, 0xc000174800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00012f0e0, 0x45af3c0, 0xc000142900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:16:55 server.go:3095: http: panic serving [::1]:62048: template: signup.html:17: unexpected EOF
+goroutine 57 [running]:
+net/http.(*conn).serve.func1(0xc00009a0a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000a8330)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000c01c0, 0x44bd960, 0x459f990, 0xc000049b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000c01c0, 0xc0000aaa00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0000c01c0, 0xc0000aaa00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000c01c0, 0xc0000aaa00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000180000, 0x45ae9c0, 0xc0000c01c0, 0xc0000aaa00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00009a0a0, 0x45af3c0, 0xc0000a6480)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:17:38 server.go:3095: http: panic serving [::1]:62118: template: signup.html:17: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000102f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0001961b0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00019a1c0, 0x44bd960, 0x459f990, 0xc00013bb38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00019a1c0, 0xc000142500)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00019a1c0, 0xc000142500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00019a1c0, 0xc000142500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00019a1c0, 0xc000142500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000102f00, 0x45af3c0, 0xc00005c640)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:17:38 server.go:3095: http: panic serving [::1]:62119: template: signup.html:17: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000102fa0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00021a0f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00021e000, 0x44bd960, 0x459f990, 0xc000141b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00021e000, 0xc000142100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00021e000, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00021e000, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00021e000, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000102fa0, 0x45af3c0, 0xc00005c580)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:17:38 server.go:3095: http: panic serving [::1]:62234: template: signup.html:17: unexpected EOF
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc000103040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00021a200)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00021e0e0, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00021e0e0, 0xc000142600)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00021e0e0, 0xc000142600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00021e0e0, 0xc000142600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00021e0e0, 0xc000142600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000103040, 0x45af3c0, 0xc00005c880)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:17:40 server.go:3095: http: panic serving [::1]:62243: template: signup.html:17: unexpected EOF
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc0001f0000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0001962e0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00019a2a0, 0x44bd960, 0x459f990, 0xc0001f7b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00019a2a0, 0xc0001a8a00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00019a2a0, 0xc0001a8a00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00019a2a0, 0xc0001a8a00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00019a2a0, 0xc0001a8a00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001f0000, 0x45af3c0, 0xc0001943c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:17:45 server.go:3095: http: panic serving [::1]:62244: template: signup.html:17: unexpected EOF
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0001f00a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00021a310)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00021e1c0, 0x44bd960, 0x459f990, 0xc0001f6b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00021e1c0, 0xc0001a8900)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00021e1c0, 0xc0001a8900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00021e1c0, 0xc0001a8900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00021e1c0, 0xc0001a8900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001f00a0, 0x45af3c0, 0xc000194340)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:17:45 server.go:3095: http: panic serving [::1]:62266: template: signup.html:17: unexpected EOF
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc0001f0140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000aa220)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000ae0e0, 0x44bd960, 0x459f990, 0xc0001f7b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000ae0e0, 0xc0001a8f00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0000ae0e0, 0xc0001a8f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000ae0e0, 0xc0001a8f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0000ae0e0, 0xc0001a8f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001f0140, 0x45af3c0, 0xc000194680)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:17:45 server.go:3095: http: panic serving [::1]:62267: template: signup.html:17: unexpected EOF
+goroutine 59 [running]:
+net/http.(*conn).serve.func1(0xc000272000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000aa330)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000ae1c0, 0x44bd960, 0x459f990, 0xc0001f6b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000ae1c0, 0xc000236c00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0000ae1c0, 0xc000236c00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000ae1c0, 0xc000236c00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0000ae1c0, 0xc000236c00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000272000, 0x45af3c0, 0xc000218600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:09 server.go:3095: http: panic serving [::1]:65535: template: signup.html:17: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b4f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000012090)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001080e0, 0x44bd960, 0x459f990, 0xc000044b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001080e0, 0xc0000fc200)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001080e0, 0xc0000fc200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001080e0, 0xc0000fc200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001080e0, 0xc0000fc200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b4f00, 0x45af3c0, 0xc0000ca600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:09 server.go:3095: http: panic serving [::1]:49152: template: signup.html:17: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b4fa0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000099170)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001081c0, 0x44bd960, 0x459f990, 0xc0000fbb38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001081c0, 0xc0000fc100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001081c0, 0xc0000fc100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001081c0, 0xc0000fc100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001081c0, 0xc0000fc100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b4fa0, 0x45af3c0, 0xc0000ca540)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:09 server.go:3095: http: panic serving [::1]:49153: template: signup.html:17: unexpected EOF
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc0000b5040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00029a0f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00029e000, 0x44bd960, 0x459f990, 0xc000044b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00029e000, 0xc0000fc900)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00029e000, 0xc0000fc900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00029e000, 0xc0000fc900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00029e000, 0xc0000fc900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5040, 0x45af3c0, 0xc0000caa00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:11 server.go:3095: http: panic serving [::1]:49162: template: signup.html:17: unexpected EOF
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0002e2000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00029a220)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00029e0e0, 0x44bd960, 0x459f990, 0xc0002e8b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00029e0e0, 0xc0002b4600)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00029e0e0, 0xc0002b4600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00029e0e0, 0xc0002b4600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00029e0e0, 0xc0002b4600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e2000, 0x45af3c0, 0xc000298280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:14 server.go:3095: http: panic serving [::1]:49163: template: signup.html:17: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0002e20a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00029a330)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00029e1c0, 0x44bd960, 0x459f990, 0xc000044b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00029e1c0, 0xc0002b4500)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00029e1c0, 0xc0002b4500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00029e1c0, 0xc0002b4500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00029e1c0, 0xc0002b4500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e20a0, 0x45af3c0, 0xc000298200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:14 server.go:3095: http: panic serving [::1]:49176: template: signup.html:17: unexpected EOF
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc0000b50e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000992a0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001082a0, 0x44bd960, 0x459f990, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001082a0, 0xc0000fca00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001082a0, 0xc0000fca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001082a0, 0xc0000fca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001082a0, 0xc0000fca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b50e0, 0x45af3c0, 0xc0000caac0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:14 server.go:3095: http: panic serving [::1]:49177: template: signup.html:17: unexpected EOF
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc0001a2000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000121b0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001aa000, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001aa000, 0xc00007a200)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001aa000, 0xc00007a200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001aa000, 0xc00007a200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001aa000, 0xc00007a200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a2000, 0x45af3c0, 0xc00005c140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:15 server.go:3095: http: panic serving [::1]:49178: template: signup.html:17: unexpected EOF
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc0001a20a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000122d0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001aa0e0, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001aa0e0, 0xc00007a700)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001aa0e0, 0xc00007a700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001aa0e0, 0xc00007a700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001aa0e0, 0xc00007a700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a20a0, 0x45af3c0, 0xc00005c3c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:15 server.go:3095: http: panic serving [::1]:49179: template: signup.html:17: unexpected EOF
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0000b5180)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000993c0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000108380, 0x44bd960, 0x459f990, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc000108380, 0xc0000fcf00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc000108380, 0xc0000fcf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000108380, 0xc0000fcf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000108380, 0xc0000fcf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5180, 0x45af3c0, 0xc0000cad80)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:15 server.go:3095: http: panic serving [::1]:49180: template: signup.html:17: unexpected EOF
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xc0001a2140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000994d0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000108460, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc000108460, 0xc00007ac00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc000108460, 0xc00007ac00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000108460, 0xc00007ac00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000108460, 0xc00007ac00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a2140, 0x45af3c0, 0xc00005c640)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:15 server.go:3095: http: panic serving [::1]:49186: template: signup.html:17: unexpected EOF
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc0002e2140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00029a450)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00029e2a0, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00029e2a0, 0xc0000fd800)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00029e2a0, 0xc0000fd800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00029e2a0, 0xc0000fd800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00029e2a0, 0xc0000fd800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e2140, 0x45af3c0, 0xc0000cb200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:15 server.go:3095: http: panic serving [::1]:49187: template: signup.html:17: unexpected EOF
+goroutine 46 [running]:
+net/http.(*conn).serve.func1(0xc0002e21e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0002200f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000224000, 0x44bd960, 0x459f990, 0xc000044b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc000224000, 0xc0002b4f00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc000224000, 0xc0002b4f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000224000, 0xc0002b4f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000224000, 0xc0002b4f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e21e0, 0x45af3c0, 0xc000298740)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:15 server.go:3095: http: panic serving [::1]:49188: template: signup.html:17: unexpected EOF
+goroutine 82 [running]:
+net/http.(*conn).serve.func1(0xc0002e2280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00029a570)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00029e380, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00029e380, 0xc0002b5400)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00029e380, 0xc0002b5400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00029e380, 0xc0002b5400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00029e380, 0xc0002b5400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e2280, 0x45af3c0, 0xc0002989c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:17 server.go:3095: http: panic serving [::1]:49190: template: signup.html:17: unexpected EOF
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc0000b5220)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000099610)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000108540, 0x44bd960, 0x459f990, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc000108540, 0xc0000fd900)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc000108540, 0xc0000fd900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000108540, 0xc0000fd900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000108540, 0xc0000fd900)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5220, 0x45af3c0, 0xc0000cb280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:17 server.go:3095: http: panic serving [::1]:49191: template: signup.html:17: unexpected EOF
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc0000b52c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00029a680)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00029e460, 0x44bd960, 0x459f990, 0xc000046b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00029e460, 0xc0000fda00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00029e460, 0xc0000fda00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00029e460, 0xc0000fda00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00029e460, 0xc0000fda00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b52c0, 0x45af3c0, 0xc0000cb300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:17 server.go:3095: http: panic serving [::1]:49196: template: signup.html:17: unexpected EOF
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc000258000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000099720)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000108620, 0x44bd960, 0x459f990, 0xc000044b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc000108620, 0xc000240400)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc000108620, 0xc000240400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000108620, 0xc000240400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000108620, 0xc000240400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000258000, 0x45af3c0, 0xc00021e200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:18 server.go:3095: http: panic serving [::1]:49197: template: signup.html:17: unexpected EOF
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc0002580a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000099840)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000108700, 0x44bd960, 0x459f990, 0xc0002e4b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc000108700, 0xc000240500)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc000108700, 0xc000240500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000108700, 0xc000240500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000108700, 0xc000240500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002580a0, 0x45af3c0, 0xc00021e280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:18 server.go:3095: http: panic serving [::1]:49198: template: signup.html:17: unexpected EOF
+goroutine 63 [running]:
+net/http.(*conn).serve.func1(0xc0000b5360)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000220220)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0002240e0, 0x44bd960, 0x459f990, 0xc000044b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0002240e0, 0xc000392300)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0002240e0, 0xc000392300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0002240e0, 0xc000392300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0002240e0, 0xc000392300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5360, 0x45af3c0, 0xc0000cb780)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:18 server.go:3095: http: panic serving [::1]:49199: template: signup.html:17: unexpected EOF
+goroutine 99 [running]:
+net/http.(*conn).serve.func1(0xc0000b5400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000099960)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001087e0, 0x44bd960, 0x459f990, 0xc0002e4b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001087e0, 0xc000392800)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001087e0, 0xc000392800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001087e0, 0xc000392800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001087e0, 0xc000392800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5400, 0x45af3c0, 0xc0000cba00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:18 server.go:3095: http: panic serving [::1]:49200: template: signup.html:17: unexpected EOF
+goroutine 103 [running]:
+net/http.(*conn).serve.func1(0xc0000b54a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000123f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001aa1c0, 0x44bd960, 0x459f990, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001aa1c0, 0xc000392e00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001aa1c0, 0xc000392e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001aa1c0, 0xc000392e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001aa1c0, 0xc000392e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b54a0, 0x45af3c0, 0xc0000cbd00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:18 server.go:3095: http: panic serving [::1]:49201: template: signup.html:17: unexpected EOF
+goroutine 104 [running]:
+net/http.(*conn).serve.func1(0xc0000b5540)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000012500)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001aa2a0, 0x44bd960, 0x459f990, 0xc0002e4b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001aa2a0, 0xc000392d00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001aa2a0, 0xc000392d00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001aa2a0, 0xc000392d00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001aa2a0, 0xc000392d00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5540, 0x45af3c0, 0xc0000cbc80)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:18 server.go:3095: http: panic serving [::1]:49206: template: signup.html:17: unexpected EOF
+goroutine 105 [running]:
+net/http.(*conn).serve.func1(0xc0000b55e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000099aa0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001088c0, 0x44bd960, 0x459f990, 0xc000047b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001088c0, 0xc000392f00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001088c0, 0xc000392f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001088c0, 0xc000392f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001088c0, 0xc000392f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b55e0, 0x45af3c0, 0xc0000cbd80)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:21 server.go:3095: http: panic serving [::1]:49215: template: signup.html:17: unexpected EOF
+goroutine 89 [running]:
+net/http.(*conn).serve.func1(0xc0002e2320)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000220330)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0002241c0, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0002241c0, 0xc0002b5e00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0002241c0, 0xc0002b5e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0002241c0, 0xc0002b5e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0002241c0, 0xc0002b5e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e2320, 0x45af3c0, 0xc000298ec0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:21 server.go:3095: http: panic serving [::1]:49216: template: signup.html:17: unexpected EOF
+goroutine 90 [running]:
+net/http.(*conn).serve.func1(0xc0002e23c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000012610)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001aa380, 0x44bd960, 0x459f990, 0xc000046b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001aa380, 0xc0002b5d00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001aa380, 0xc0002b5d00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001aa380, 0xc0002b5d00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001aa380, 0xc0002b5d00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e23c0, 0x45af3c0, 0xc000298e40)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:21 server.go:3095: http: panic serving [::1]:49217: template: signup.html:17: unexpected EOF
+goroutine 77 [running]:
+net/http.(*conn).serve.func1(0xc000258140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000012720)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001aa460, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001aa460, 0xc000240f00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001aa460, 0xc000240f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001aa460, 0xc000240f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001aa460, 0xc000240f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000258140, 0x45af3c0, 0xc00021e700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:27 server.go:3095: http: panic serving [::1]:49238: template: signup.html:17: unexpected EOF
+goroutine 91 [running]:
+net/http.(*conn).serve.func1(0xc0002e2460)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00029a7c0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00029e540, 0x44bd960, 0x459f990, 0xc0002e8b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00029e540, 0xc0002b5f00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc00029e540, 0xc0002b5f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00029e540, 0xc0002b5f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc00029e540, 0xc0002b5f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e2460, 0x45af3c0, 0xc000298f40)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:57 server.go:3095: http: panic serving [::1]:49239: template: signup.html:17: unexpected EOF
+goroutine 124 [running]:
+net/http.(*conn).serve.func1(0xc0001a21e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000220450)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0002242a0, 0x44bd960, 0x459f990, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0002242a0, 0xc00007bf00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0002242a0, 0xc00007bf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0002242a0, 0xc00007bf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0002242a0, 0xc00007bf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a21e0, 0x45af3c0, 0xc00005cec0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:57 server.go:3095: http: panic serving [::1]:49365: template: signup.html:17: unexpected EOF
+goroutine 95 [running]:
+net/http.(*conn).serve.func1(0xc0002e2500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000012840)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001aa540, 0x44bd960, 0x459f990, 0xc0002e8b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001aa540, 0xc000348400)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001aa540, 0xc000348400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001aa540, 0xc000348400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001aa540, 0xc000348400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002e2500, 0x45af3c0, 0xc0002991c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:30:57 server.go:3095: http: panic serving [::1]:49366: template: signup.html:17: unexpected EOF
+goroutine 109 [running]:
+net/http.(*conn).serve.func1(0xc0000b5680)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000099bc0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001089a0, 0x44bd960, 0x459f990, 0xc000047b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001089a0, 0xc000393400)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001089a0, 0xc000393400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001089a0, 0xc000393400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001089a0, 0xc000393400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5680, 0x45af3c0, 0xc0003e0000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:31:38 server.go:3095: http: panic serving [::1]:49541: template: signup.html:17: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000102f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc000013080)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000ae000, 0x0, 0x0, 0xc000049b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000ae000, 0xc000142200)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0000ae000, 0xc000142200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000ae000, 0xc000142200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0000ae000, 0xc000142200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000102f00, 0x45af3c0, 0xc00005c640)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:31:38 server.go:3095: http: panic serving [::1]:49542: template: signup.html:17: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000102fa0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc00018c140)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001c0000, 0x0, 0x0, 0xc000141b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001c0000, 0xc000142100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0001c0000, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001c0000, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0001c0000, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000102fa0, 0x45af3c0, 0xc00005c580)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:31:38 server.go:3095: http: panic serving [::1]:49543: template: signup.html:17: unexpected EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc0000be000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b40, 0xc0000aa140)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000ae0e0, 0x0, 0x0, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000ae0e0, 0xc0000ca000)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551010, 0x45ae9c0, 0xc0000ae0e0, 0xc0000ca000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000ae0e0, 0xc0000ca000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0000ae0e0, 0xc0000ca000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000be000, 0x45af3c0, 0xc0000a80c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:17 server.go:3095: http: panic serving [::1]:50944: template: top.html:3: unexpected {{end}}
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b4f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000099220)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001082a0, 0x0, 0x0, 0xc0000f5b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0001082a0, 0xc0000fc700)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc0001082a0, 0xc0000fc700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001082a0, 0xc0000fc700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001082a0, 0xc0000fc700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b4f00, 0x45af3c0, 0xc000190000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:17 server.go:3095: http: panic serving [::1]:50945: template: top.html:3: unexpected {{end}}
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b4fa0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc0001920e0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001a8000, 0x0, 0x0, 0xc0000fbb38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0001a8000, 0xc0000fc100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc0001a8000, 0xc0000fc100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001a8000, 0xc0000fc100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001a8000, 0xc0000fc100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b4fa0, 0x45af3c0, 0xc0000ca540)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:17 server.go:3095: http: panic serving [::1]:50950: template: top.html:3: unexpected {{end}}
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc000070000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000099320)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000108380, 0x0, 0x0, 0xc000049b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc000108380, 0xc00006c100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc000108380, 0xc00006c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000108380, 0xc00006c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000108380, 0xc00006c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000070000, 0x45af3c0, 0xc00005c080)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:39 server.go:3095: http: panic serving [::1]:51041: template: top.html:3: unexpected {{end}}
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc0000700a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000012110)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000740e0, 0x0, 0x0, 0xc000049b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0000740e0, 0xc0000fce00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc0000740e0, 0xc0000fce00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000740e0, 0xc0000fce00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0000740e0, 0xc0000fce00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000700a0, 0x45af3c0, 0xc0000cac40)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:39 server.go:3095: http: panic serving [::1]:51042: template: top.html:3: unexpected {{end}}
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000070140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000012200)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000742a0, 0x0, 0x0, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0000742a0, 0xc00006c200)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc0000742a0, 0xc00006c200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000742a0, 0xc00006c200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0000742a0, 0xc00006c200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000070140, 0x45af3c0, 0xc00005c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:39 server.go:3095: http: panic serving [::1]:51043: template: top.html:3: unexpected {{end}}
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xc0000701e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000012300)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000074460, 0x0, 0x0, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc000074460, 0xc00006ca00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc000074460, 0xc00006ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000074460, 0xc00006ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000074460, 0xc00006ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000701e0, 0x45af3c0, 0xc00005c580)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:40 server.go:3095: http: panic serving [::1]:51052: template: top.html:3: unexpected {{end}}
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0000b5040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000099430)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000108460, 0x0, 0x0, 0xc00004ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc000108460, 0xc00006ce00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc000108460, 0xc00006ce00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000108460, 0xc00006ce00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000108460, 0xc00006ce00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b5040, 0x45af3c0, 0xc00005c840)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:40 server.go:3095: http: panic serving [::1]:51053: template: top.html:3: unexpected {{end}}
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0xc0000b50e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000099520)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000108540, 0x0, 0x0, 0xc000189b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc000108540, 0xc0000fcf00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc000108540, 0xc0000fcf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000108540, 0xc0000fcf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc000108540, 0xc0000fcf00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b50e0, 0x45af3c0, 0xc0000cacc0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:40 server.go:3095: http: panic serving [::1]:51054: template: top.html:3: unexpected {{end}}
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0001c8000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc0001921d0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001a80e0, 0x0, 0x0, 0xc00018ab38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0001a80e0, 0xc0001bc300)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc0001a80e0, 0xc0001bc300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001a80e0, 0xc0001bc300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001a80e0, 0xc0001bc300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001c8000, 0x45af3c0, 0xc000190280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:37:45 server.go:3095: http: panic serving [::1]:51075: template: top.html:3: unexpected {{end}}
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0001c80a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc0001922e0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001a81c0, 0x0, 0x0, 0xc00018bb38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.top(0x45ae9c0, 0xc0001a81c0, 0xc0001bc800)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551030, 0x45ae9c0, 0xc0001a81c0, 0xc0001bc800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001a81c0, 0xc0001bc800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ae9c0, 0xc0001a81c0, 0xc0001bc800)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001c80a0, 0x45af3c0, 0xc000190580)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:39:27 server.go:3095: http: panic serving [::1]:51476: template: signup.html:17: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000102fa0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc00018e030)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000aa2a0, 0x0, 0x0, 0xc00013bb38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000aa2a0, 0xc0000ae600)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc0000aa2a0, 0xc0000ae600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000aa2a0, 0xc0000ae600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0000aa2a0, 0xc0000ae600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000102fa0, 0x45af3c0, 0xc00005c640)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:39:27 server.go:3095: http: panic serving [::1]:51477: template: signup.html:17: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000103040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc00018e130)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001c00e0, 0x0, 0x0, 0xc000141b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001c00e0, 0xc000142100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc0001c00e0, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001c00e0, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0001c00e0, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000103040, 0x45af3c0, 0xc00005c580)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:39:27 server.go:3095: http: panic serving [::1]:51499: template: signup.html:17: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0000d0000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc0000a6290)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000aa460, 0x0, 0x0, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000aa460, 0xc0000aea00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc0000aa460, 0xc0000aea00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000aa460, 0xc0000aea00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0000aa460, 0xc0000aea00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000d0000, 0x45af3c0, 0xc0000a4380)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:39:29 server.go:3095: http: panic serving [::1]:51508: template: signup.html:17: unexpected EOF
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc000208000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc0002200f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00023c000, 0x0, 0x0, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00023c000, 0xc0000af000)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00023c000, 0xc0000af000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00023c000, 0xc0000af000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00023c000, 0xc0000af000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000208000, 0x45af3c0, 0xc0000a4600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:39:29 server.go:3095: http: panic serving [::1]:51509: template: signup.html:17: unexpected EOF
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc0002080a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000013210)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00014c2a0, 0x0, 0x0, 0xc000218b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00014c2a0, 0xc000226000)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00014c2a0, 0xc000226000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00014c2a0, 0xc000226000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00014c2a0, 0xc000226000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002080a0, 0x45af3c0, 0xc00021e000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:39:29 server.go:3095: http: panic serving [::1]:51510: template: signup.html:17: unexpected EOF
+goroutine 16 [running]:
+net/http.(*conn).serve.func1(0xc0001030e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000013320)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00014c380, 0x0, 0x0, 0xc000218b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00014c380, 0xc000142e00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00014c380, 0xc000142e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00014c380, 0xc000142e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00014c380, 0xc000142e00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001030e0, 0x45af3c0, 0xc00005cb80)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:39:34 server.go:3095: http: panic serving [::1]:51531: template: signup.html:17: unexpected EOF
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc000208140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000220210)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00023c0e0, 0x0, 0x0, 0xc000219b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00023c0e0, 0xc000226600)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00023c0e0, 0xc000226600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00023c0e0, 0xc000226600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00023c0e0, 0xc000226600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000208140, 0x45af3c0, 0xc00021e380)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:40:04 server.go:3095: http: panic serving [::1]:51532: template: signup.html:17: unexpected EOF
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc0002081e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000013430)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00014c460, 0x0, 0x0, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00014c460, 0xc000226500)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00014c460, 0xc000226500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00014c460, 0xc000226500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00014c460, 0xc000226500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002081e0, 0x45af3c0, 0xc00021e2c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:40:04 server.go:3095: http: panic serving [::1]:51678: template: signup.html:17: unexpected EOF
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc000103180)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000220310)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00023c1c0, 0x0, 0x0, 0xc000218b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00023c1c0, 0xc000143300)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00023c1c0, 0xc000143300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00023c1c0, 0xc000143300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00023c1c0, 0xc000143300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000103180, 0x45af3c0, 0xc00005ce00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:40:04 server.go:3095: http: panic serving [::1]:51679: template: signup.html:17: unexpected EOF
+goroutine 63 [running]:
+net/http.(*conn).serve.func1(0xc000208280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000013530)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00014c540, 0x0, 0x0, 0xc000218b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00014c540, 0xc000226f00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00014c540, 0xc000226f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00014c540, 0xc000226f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00014c540, 0xc000226f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000208280, 0x45af3c0, 0xc00021e840)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:41:05 server.go:3095: http: panic serving [::1]:51924: template: signup.html:17: unexpected EOF
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0000d00a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000013640)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00014c620, 0x0, 0x0, 0xc000218b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00014c620, 0xc000143c00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00014c620, 0xc000143c00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00014c620, 0xc000143c00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00014c620, 0xc000143c00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000d00a0, 0x45af3c0, 0xc00005d280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:41:05 server.go:3095: http: panic serving [::1]:51925: template: signup.html:17: unexpected EOF
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc0000d0140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000220420)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00023c2a0, 0x0, 0x0, 0xc000046b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00023c2a0, 0xc0000af100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00023c2a0, 0xc0000af100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00023c2a0, 0xc0000af100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00023c2a0, 0xc0000af100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000d0140, 0x45af3c0, 0xc0000a4680)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:41:05 server.go:3095: http: panic serving [::1]:51926: template: signup.html:17: unexpected EOF
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0001ec000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc00018e240)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001c01c0, 0x0, 0x0, 0xc000214b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001c01c0, 0xc00018c500)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc0001c01c0, 0xc00018c500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001c01c0, 0xc00018c500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0001c01c0, 0xc00018c500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001ec000, 0x45af3c0, 0xc0001802c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:46:05 server.go:3095: http: panic serving [::1]:53211: template: signup.html:17: unexpected EOF
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0xc0000d01e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc0000a63c0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000aa540, 0x0, 0x0, 0xc000047b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000aa540, 0xc0000af200)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc0000aa540, 0xc0000af200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000aa540, 0xc0000af200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0000aa540, 0xc0000af200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000d01e0, 0x45af3c0, 0xc0000a4700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:46:05 server.go:3095: http: panic serving [::1]:53212: template: signup.html:17: unexpected EOF
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0001ec0a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc00018e350)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001c02a0, 0x0, 0x0, 0xc000214b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001c02a0, 0xc00018ca00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc0001c02a0, 0xc00018ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001c02a0, 0xc00018ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc0001c02a0, 0xc00018ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001ec0a0, 0x45af3c0, 0xc000180540)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:46:05 server.go:3095: http: panic serving [::1]:53213: template: signup.html:17: unexpected EOF
+goroutine 99 [running]:
+net/http.(*conn).serve.func1(0xc0000d0280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b60, 0xc000220520)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc00023c380, 0x0, 0x0, 0xc000047b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:17 +0x2be
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc00023c380, 0xc0000af700)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4551028, 0x45ae9c0, 0xc00023c380, 0xc0000af700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc00023c380, 0xc0000af700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae9c0, 0xc00023c380, 0xc0000af700)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000d0280, 0x45af3c0, 0xc0000a4980)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:52:04 server.go:3095: http: panic serving [::1]:54730: template: signup.html:17: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc000120fa0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b20, 0xc000101070)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0000b6000, 0x0, 0x0, 0xc00016bb38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0000b6000, 0xc00016c100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4550fe8, 0x45ae9c0, 0xc0000b6000, 0xc00016c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0000b6000, 0xc00016c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000178000, 0x45ae9c0, 0xc0000b6000, 0xc00016c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000120fa0, 0x45af3c0, 0xc000138540)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:52:04 server.go:3095: http: panic serving [::1]:54731: template: signup.html:17: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc000121040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b20, 0xc000012120)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc000200000, 0x0, 0x0, 0xc000044b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc000200000, 0xc00016c200)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4550fe8, 0x45ae9c0, 0xc000200000, 0xc00016c200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc000200000, 0xc00016c200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000178000, 0x45ae9c0, 0xc000200000, 0xc00016c200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000121040, 0x45af3c0, 0xc000138600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:52:04 server.go:3095: http: panic serving [::1]:54732: template: signup.html:17: unexpected EOF
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc0001210e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b20, 0xc000012240)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0002000e0, 0x0, 0x0, 0xc000045b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0002000e0, 0xc00016c500)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4550fe8, 0x45ae9c0, 0xc0002000e0, 0xc00016c500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0002000e0, 0xc00016c500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000178000, 0x45ae9c0, 0xc0002000e0, 0xc00016c500)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001210e0, 0x45af3c0, 0xc0001387c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:52:08 server.go:3095: http: panic serving [::1]:54745: template: signup.html:17: unexpected EOF
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc0000d6000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b20, 0xc000012360)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0002001c0, 0x0, 0x0, 0xc000097b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0002001c0, 0xc0000ca200)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4550fe8, 0x45ae9c0, 0xc0002001c0, 0xc0000ca200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0002001c0, 0xc0000ca200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000178000, 0x45ae9c0, 0xc0002001c0, 0xc0000ca200)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000d6000, 0x45af3c0, 0xc0000b0140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:52:09 server.go:3095: http: panic serving [::1]:54746: template: signup.html:17: unexpected EOF
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0000d60a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b20, 0xc000012480)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0002002a0, 0x0, 0x0, 0xc000098b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0002002a0, 0xc0000ca300)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4550fe8, 0x45ae9c0, 0xc0002002a0, 0xc0000ca300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0002002a0, 0xc0000ca300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000178000, 0x45ae9c0, 0xc0002002a0, 0xc0000ca300)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000d60a0, 0x45af3c0, 0xc0000b01c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:52:09 server.go:3095: http: panic serving [::1]:54755: template: signup.html:17: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0000d6140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b20, 0xc0001011a0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0001780e0, 0x0, 0x0, 0xc000099b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0001780e0, 0xc0000ca400)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4550fe8, 0x45ae9c0, 0xc0001780e0, 0xc0000ca400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0001780e0, 0xc0000ca400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000178000, 0x45ae9c0, 0xc0001780e0, 0xc0000ca400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000d6140, 0x45af3c0, 0xc0000b0280)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:52:09 server.go:3095: http: panic serving [::1]:54756: template: signup.html:17: unexpected EOF
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc00028c000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0b20, 0xc00029a110)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae9c0, 0xc0002b2000, 0x0, 0x0, 0xc000092b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae9c0, 0xc0002b2000, 0xc00029c000)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4550fe8, 0x45ae9c0, 0xc0002b2000, 0xc00029c000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae9c0, 0xc0002b2000, 0xc00029c000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000178000, 0x45ae9c0, 0xc0002b2000, 0xc00029c000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00028c000, 0x45af3c0, 0xc000298000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:53:53 server.go:3095: http: panic serving [::1]:55156: template: signup.html:17: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000102f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc0000131f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc00014c2a0, 0x0, 0x0, 0xc00013bb38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc00014c2a0, 0xc000142600)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc00014c2a0, 0xc000142600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc00014c2a0, 0xc000142600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc00014c2a0, 0xc000142600)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000102f00, 0x45af380, 0xc000096000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:53:53 server.go:3095: http: panic serving [::1]:55157: template: signup.html:17: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000102fa0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc0000981f0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc0000a02a0, 0x0, 0x0, 0xc000141b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc0000a02a0, 0xc000142100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc0000a02a0, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc0000a02a0, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc0000a02a0, 0xc000142100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000102fa0, 0x45af380, 0xc00005c580)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:53:53 server.go:3095: http: panic serving [::1]:55186: template: signup.html:17: unexpected EOF
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc0001ae000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc000196190)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc00019a2a0, 0x0, 0x0, 0xc0001b4b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc00019a2a0, 0xc00019e400)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc00019a2a0, 0xc00019e400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc00019a2a0, 0xc00019e400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc00019a2a0, 0xc00019e400)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001ae000, 0x45af380, 0xc0001940c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:53:55 server.go:3095: http: panic serving [::1]:55195: template: signup.html:17: unexpected EOF
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc0001ae0a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc00028a120)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc0002a6000, 0x0, 0x0, 0xc0001b0b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc0002a6000, 0xc00028c000)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc0002a6000, 0xc00028c000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc0002a6000, 0xc00028c000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc0002a6000, 0xc00028c000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001ae0a0, 0x45af380, 0xc000288000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:53:55 server.go:3095: http: panic serving [::1]:55196: template: signup.html:17: unexpected EOF
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0001ae140)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc00028a240)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc0002a60e0, 0x0, 0x0, 0xc0001b1b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc0002a60e0, 0xc00028c100)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc0002a60e0, 0xc00028c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc0002a60e0, 0xc00028c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc0002a60e0, 0xc00028c100)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001ae140, 0x45af380, 0xc000288080)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:53:55 server.go:3095: http: panic serving [::1]:55197: template: signup.html:17: unexpected EOF
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc0001ae1e0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc0001962c0)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc00019a380, 0x0, 0x0, 0xc0001b4b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc00019a380, 0xc00019ea00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc00019a380, 0xc00019ea00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc00019a380, 0xc00019ea00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc00019a380, 0xc00019ea00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001ae1e0, 0x45af380, 0xc000194340)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:54:00 server.go:3095: http: panic serving [::1]:55220: template: signup.html:17: unexpected EOF
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc0002ec000)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc00028a380)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc0002a61c0, 0x0, 0x0, 0xc0001b0b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc0002a61c0, 0xc00028cb00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc0002a61c0, 0xc00028cb00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc0002a61c0, 0xc00028cb00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc0002a61c0, 0xc00028cb00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002ec000, 0x45af380, 0xc0002885c0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:54:00 server.go:3095: http: panic serving [::1]:55221: template: signup.html:17: unexpected EOF
+goroutine 57 [running]:
+net/http.(*conn).serve.func1(0xc0002ec0a0)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc000013310)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc00014c380, 0x0, 0x0, 0xc0001b1b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc00014c380, 0xc00028ca00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc00014c380, 0xc00028ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc00014c380, 0xc00028ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc00014c380, 0xc00028ca00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002ec0a0, 0x45af380, 0xc000288540)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/12 17:54:00 server.go:3095: http: panic serving [::1]:55222: template: signup.html:17: unexpected EOF
+goroutine 67 [running]:
+net/http.(*conn).serve.func1(0xc000103040)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d0a20, 0xc000098310)
+	/usr/local/opt/go/libexec/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/opt/go/libexec/src/text/template/helper.go:23
+golang/todo_app/app/controllers.generateHTML(0x45ae980, 0xc0000a0380, 0x0, 0x0, 0xc0001b1b38, 0x2, 0x2)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/server.go:18 +0x34e
+golang/todo_app/app/controllers.signup(0x45ae980, 0xc0000a0380, 0xc000142f00)
+	/Users/sancunyingzhi/go/src/golang/todo_app/app/controllers/route_auth.go:10 +0xef
+net/http.HandlerFunc.ServeHTTP(0x4550f18, 0x45ae980, 0xc0000a0380, 0xc000142f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47cd520, 0x45ae980, 0xc0000a0380, 0xc000142f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00014c000, 0x45ae980, 0xc0000a0380, 0xc000142f00)
+	/usr/local/opt/go/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000103040, 0x45af380, 0xc00005cc40)
+	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
