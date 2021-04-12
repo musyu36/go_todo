@@ -17,6 +17,7 @@ var err error
 
 const (
 	tableNameUser = "users"
+	tableNameTodo = "todos"
 )
 
 func init() {
@@ -33,10 +34,18 @@ func init() {
 		email STRING,
 		password STRING,
 		created_at DATETIME
-	)`, tableNameUser)
-
+	)`, tableNameUser) // tableNameUserは %s に入る
 	// コマンド実行
 	Db.Exec(cmdU)
+
+	// todos table が無ければ作成する
+	cmdT := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		content TEXT,
+		user_id INTEGER,
+		created_at DATETIME
+	)`, tableNameTodo)
+	Db.Exec(cmdT)
 }
 
 // UUIDの作成
