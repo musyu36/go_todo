@@ -119,6 +119,7 @@ func (u *User) CreateSession() (session Session, err error) {
 	// sessions テーブルから user_id, email が一致するものを取得
 	cmd2 := `select id, uuid, email, user_id, created_at from sessions where user_id = ? and email = ?`
 
+	// Scan して session に渡す
 	err = Db.QueryRow(cmd2, u.ID, u.Email).Scan(
 		&session.ID,
 		&session.UUID,
@@ -126,4 +127,24 @@ func (u *User) CreateSession() (session Session, err error) {
 		&session.UserID,
 		&session.CreatedAt)
 	return session, err
+}
+
+func (sess *Session) CheckSession() (valid bool, err error) {
+	cmd := `select id, uuid, email, user_id, created_at from sessions where uuid = ?`
+
+	err = Db.QueryRow(cmd, sess.UUID).Scan(
+		&sess.ID,
+		&sess.UUID,
+		&sess.Email,
+		&sess.UserID,
+		&sess.CreatedAt,
+	)
+	if err != nil {
+		valid = false
+		return
+	}
+	if sess.ID != 0 {
+		valid = true
+	}
+	return valid, err
 }
