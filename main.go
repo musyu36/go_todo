@@ -15,4 +15,12 @@ func main() {
 
 	// init 関数を呼ぶため
 	fmt.Println(models.Db)
+
+	u := &models.User{}
+	u.Name = "test"
+	u.Email = "test@example.com"
+	u.PassWord = "testtset"
+	fmt.Println(u)
+
+	u.CreateUser()
 }
