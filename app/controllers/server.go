@@ -27,6 +27,7 @@ func StartMainServer() error {
 	// "/" にアクセスすると top を実行する、(topはroute_mainに記述済み)
 	http.HandleFunc("/", top)
 	http.HandleFunc("/signup", signup)
+	http.HandleFunc("/login", login)
 	// サーバ立ち上げ
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
