@@ -36,7 +36,7 @@ func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err e
 	return sess, err
 }
 
-var validPath = regexp.MustCompile("^/todos/(edit|update)/([0-9]+)$")
+var validPath = regexp.MustCompile("^/todos/(edit|update|delete)/([0-9]+)$")
 
 // ハンドラ関数を返す関数
 func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
@@ -74,6 +74,7 @@ func StartMainServer() error {
 	http.HandleFunc("/todos/save", todoSave)
 	http.HandleFunc("/todos/edit/", parseURL(todoEdit)) // 末尾にスラッシュをつけることで、要求されたURLの先頭と一致するかを見る(edit/{ID}への対応)
 	http.HandleFunc("/todos/update/", parseURL(todoUpdate))
+	http.HandleFunc("/todos/delete/", parseURL(todoDelete))
 	// サーバ立ち上げ
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
