@@ -5,6 +5,7 @@ import (
 	"golang/todo_app/config"
 	"golang/todo_app/models"
 	"net/http"
+	"os"
 	"regexp"
 	"strconv"
 	"text/template"
@@ -75,6 +76,10 @@ func StartMainServer() error {
 	http.HandleFunc("/todos/edit/", parseURL(todoEdit)) // 末尾にスラッシュをつけることで、要求されたURLの先頭と一致するかを見る(edit/{ID}への対応)
 	http.HandleFunc("/todos/update/", parseURL(todoUpdate))
 	http.HandleFunc("/todos/delete/", parseURL(todoDelete))
+
+	// ポート取得
+	port := os.Getenv("PORT")
+
 	// サーバ立ち上げ
-	return http.ListenAndServe(":"+config.Config.Port, nil)
+	return http.ListenAndServe(":"+port, nil)
 }

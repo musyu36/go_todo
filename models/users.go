@@ -30,7 +30,7 @@ func (u *User) CreateUser() (err error) {
 		email,
 		password,
 		created_at
-	) values (?, ?, ?, ?, ?)`
+	) values ($1, $2, $3, $4, $5)`
 
 	// 同一パッケージ内なのでDB使える
 	_, err = Db.Exec(cmd,
@@ -49,7 +49,7 @@ func (u *User) CreateUser() (err error) {
 func GetUser(id int) (user User, err error) {
 	user = User{}
 	cmd := `select id, uuid, name, email, password, created_at
-	from users where id = ?`
+	from users where id = $1`
 
 	err = Db.QueryRow(cmd, id).Scan(
 		&user.ID,
@@ -66,7 +66,7 @@ func GetUser(id int) (user User, err error) {
 
 func (u *User) UpdateUser() (err error) {
 	// 指定した id の name, email を更新
-	cmd := `update users set name = ?, email = ? where id = ?`
+	cmd := `update users set name = $1, email = $2 where id = $3`
 
 	_, err = Db.Exec(cmd, u.Name, u.Email, u.ID)
 	if err != nil {
@@ -77,7 +77,7 @@ func (u *User) UpdateUser() (err error) {
 
 func (u *User) DeleteUser() (err error) {
 	// id が一致するものを削除
-	cmd := `delete from users where id = ?`
+	cmd := `delete from users where id = $1`
 	_, err = Db.Exec(cmd, u.ID)
 
 	if err != nil {
@@ -88,7 +88,7 @@ func (u *User) DeleteUser() (err error) {
 
 func GetUserByEmail(email string) (user User, err error) {
 	user = User{}
-	cmd := `select id, uuid, name, email, password, created_at from users where email = ?`
+	cmd := `select id, uuid, name, email, password, created_at from users where email = $1`
 	err = Db.QueryRow(cmd, email).Scan(
 		&user.ID,
 		&user.UUID,
@@ -109,7 +109,7 @@ func (u *User) CreateSession() (session Session, err error) {
 		email,
 		user_id,
 		created_at
-	) values (?, ?, ?, ?)`
+	) values ($1, $2, $3, $4)`
 
 	_, err = Db.Exec(cmd1, createUUID(), u.Email, u.ID, time.Now())
 	if err != nil {
@@ -118,7 +118,7 @@ func (u *User) CreateSession() (session Session, err error) {
 
 	// 上記で作成したセッションを即取得するコマンド
 	// sessions テーブルから user_id, email が一致するものを取得
-	cmd2 := `select id, uuid, email, user_id, created_at from sessions where user_id = ? and email = ?`
+	cmd2 := `select id, uuid, email, user_id, created_at from sessions where user_id = $1 and email = $2`
 
 	// Scan して session に渡す
 	err = Db.QueryRow(cmd2, u.ID, u.Email).Scan(
@@ -131,7 +131,7 @@ func (u *User) CreateSession() (session Session, err error) {
 }
 
 func (sess *Session) CheckSession() (valid bool, err error) {
-	cmd := `select id, uuid, email, user_id, created_at from sessions where uuid = ?`
+	cmd := `select id, uuid, email, user_id, created_at from sessions where uuid = $1`
 
 	err = Db.QueryRow(cmd, sess.UUID).Scan(
 		&sess.ID,
@@ -152,7 +152,7 @@ func (sess *Session) CheckSession() (valid bool, err error) {
 
 // UUID に一致するsessionを削除
 func (sess *Session) DeleteSEssionByUUID() (err error) {
-	cmd := `delete from sessions where uuid = ?`
+	cmd := `delete from sessions where uuid = $1`
 	_, err = Db.Exec(cmd, sess.UUID)
 	if err != nil {
 		log.Fatalln(err)
@@ -163,7 +163,7 @@ func (sess *Session) DeleteSEssionByUUID() (err error) {
 // セッションからユーザーを取得
 func (sess *Session) GetUserBySession() (user User, err error) {
 	user = User{}
-	cmd := `select id, uuid, name, email, created_at FROM users where id = ?`
+	cmd := `select id, uuid, name, email, created_at FROM users where id = $1`
 	err = Db.QueryRow(cmd, sess.UserID).Scan(
 		&user.ID,
 		&user.UUID,
