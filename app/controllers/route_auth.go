@@ -78,3 +78,20 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 	}
 
 }
+
+func logout(w http.ResponseWriter, r *http.Request) {
+	// クッキーの取得
+	cookie, err := r.Cookie("_cookie")
+	if err != nil {
+		log.Println(err)
+	}
+
+	// ErrNoCookie でなければ
+	if err != http.ErrNoCookie {
+		// cookie.Value つまり UUID から session struct を作成しておく
+		session := models.Session{UUID: cookie.Value}
+		session.DeleteSEssionByUUID()
+
+	}
+	http.Redirect(w, r, "/login", 302)
+}
