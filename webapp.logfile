@@ -2436,3 +2436,7 @@ net/http.(*conn).serve(0xc000103040, 0x45af380, 0xc00005cc40)
 	/usr/local/opt/go/libexec/src/net/http/server.go:1925 +0x8ad
 created by net/http.(*Server).Serve
 	/usr/local/opt/go/libexec/src/net/http/server.go:2969 +0x36c
+2021/04/13 09:13:58 route_auth.go:43: sql: no rows in result set
+2021/04/13 09:13:58 server.go:3095: http: superfluous response.WriteHeader call from golang/todo_app/app/controllers.authenticate (route_auth.go:64)
+2021/04/13 09:14:25 route_auth.go:43: sql: no rows in result set
+2021/04/13 09:14:25 server.go:3095: http: superfluous response.WriteHeader call from golang/todo_app/app/controllers.authenticate (route_auth.go:64)

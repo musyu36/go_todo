@@ -33,3 +33,35 @@ func signup(w http.ResponseWriter, r *http.Request) {
 func login(w http.ResponseWriter, r *http.Request) {
 	generateHTML(w, nil, "layout", "public_navbar", "login")
 }
+
+// ログインページに入力されたemail, password で認証
+func authenticate(w http.ResponseWriter, r *http.Request) {
+	err := r.ParseForm()
+	// ユーザーをemailから取得
+	user, err := models.GetUserByEmail(r.PostFormValue("email"))
+	if err != nil {
+		log.Println(err)
+		http.Redirect(w, r, "/login", 302)
+	}
+	// 暗号化して保存しているので、暗号化してからパスワード比較
+	if user.PassWord == models.Encrypt(r.PostFormValue("password")) {
+		// 成功したらセッションとクッキーを作成し、トップにリダイレクト
+		session, err := user.CreateSession()
+		if err != nil {
+			log.Println(err)
+		}
+
+		cookie := http.Cookie{
+			Name:     "_cookie",
+			Value:    session.UUID,
+			HttpOnly: true,
+		}
+		http.SetCookie(w, &cookie)
+
+		http.Redirect(w, r, "/", 302)
+	} else {
+		// 失敗したらログイン画面にリダイレクト
+		http.Redirect(w, r, "/login", 302)
+	}
+
+}

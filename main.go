@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"golang/todo_app/app/controllers"
 	"golang/todo_app/models"
-	"log"
 )
 
 func main() {
@@ -16,6 +16,9 @@ func main() {
 
 	// init 関数を呼ぶため
 	fmt.Println(models.Db)
+
+	// サーバの起動
+	controllers.StartMainServer()
 
 	// u := &models.User{}
 	// u.Name = "test2"
@@ -61,18 +64,19 @@ func main() {
 	// t, _ := models.GetTodo(3)
 	// t.DeleteTodo()
 
-	// サーバの起動
-	// controllers.StartMainServer()
+	// // メールからユーザ取得
+	// user, _ := models.GetUserByEmail("test@example.com")
+	// fmt.Println(user)
 
-	user, _ := models.GetUserByEmail("test@example.com")
-	fmt.Println(user)
+	// // セッションの作成
+	// session, err := user.CreateSession()
+	// if err != nil {
+	// 	log.Println(err)
+	// }
+	// fmt.Println(session)
 
-	session, err := user.CreateSession()
-	if err != nil {
-		log.Println(err)
-	}
-	fmt.Println(session)
+	// // セッションの存在確認
+	// valid, _ := session.CheckSession()
+	// fmt.Println(valid)
 
-	valid, _ := session.CheckSession()
-	fmt.Println(valid)
 }
