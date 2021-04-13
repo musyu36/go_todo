@@ -2440,3 +2440,5 @@ created by net/http.(*Server).Serve
 2021/04/13 09:13:58 server.go:3095: http: superfluous response.WriteHeader call from golang/todo_app/app/controllers.authenticate (route_auth.go:64)
 2021/04/13 09:14:25 route_auth.go:43: sql: no rows in result set
 2021/04/13 09:14:25 server.go:3095: http: superfluous response.WriteHeader call from golang/todo_app/app/controllers.authenticate (route_auth.go:64)
+2021/04/13 14:30:13 route_main.go:30: near "FROM": syntax error
+2021/04/13 14:30:14 route_main.go:30: near "FROM": syntax error
