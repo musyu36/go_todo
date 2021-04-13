@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"golang/todo_app/models"
 	"log"
 	"net/http"
 )
@@ -69,6 +70,48 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 		}
 
 		// リダイレクト
+		http.Redirect(w, r, "/todos", 302)
+	}
+}
+
+func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		t, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+		generateHTML(w, t, "layout", "private_navbar", "todo_edit")
+	}
+}
+
+func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
+	// セッションの取得
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		// フォームを解析
+		err := r.ParseForm()
+		if err != nil {
+			log.Println(err)
+		}
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		// 内容を取得
+		content := r.PostFormValue("content")
+		t := &models.Todo{ID: id, Content: content, UserID: user.ID}
+		if err := t.UpdateTodo(); err != nil {
+			log.Println(err)
+		}
 		http.Redirect(w, r, "/todos", 302)
 	}
 }
